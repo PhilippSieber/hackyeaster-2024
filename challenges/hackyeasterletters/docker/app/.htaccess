@@ -1,0 +1,5 @@
+# Serve all text files as unicode
+AddDefaultCharset utf-8
+
+# Set encoding on individual file types
+AddCharset utf-8 .html .css

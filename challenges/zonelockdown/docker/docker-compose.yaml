@@ -1,0 +1,37 @@
+version: '3'
+services:
+  zonelockdown-1:
+    build: .
+    image: he2024/zonelockdown
+    restart: always
+    networks:
+      - challengenet
+    ports:
+      - "2411:2222"
+  zonelockdown-2:
+    build: .
+    image: he2024/zonelockdown
+    restart: always
+    networks:
+      - challengenet
+    ports:
+      - "2412:2222"
+  zonelockdown-3:
+    build: .
+    image: he2024/zonelockdown
+    restart: always
+    networks:
+      - challengenet
+    ports:
+      - "2413:2222"
+  zonelockdown-4:
+    build: .
+    image: he2024/zonelockdown
+    restart: always
+    networks:
+      - challengenet
+    ports:
+      - "2414:2222"
+networks:
+  challengenet:
+    external: true

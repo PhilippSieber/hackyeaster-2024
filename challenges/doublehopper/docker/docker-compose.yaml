@@ -1,0 +1,24 @@
+version: '3'
+services:
+  haproxy:
+    build: haproxy/.
+    image: he2024/doublehopper-haproxy
+    restart: always
+    ports:
+      - "2406:8000"
+    depends_on: 
+      - backend
+    networks:
+      - challengenet
+      - whoppernet
+  backend:
+    build: app/.
+    image: he2024/doublehopper-backend
+    restart: always
+    networks:
+      - whoppernet
+
+networks:
+  challengenet:
+    external: true
+  whoppernet:

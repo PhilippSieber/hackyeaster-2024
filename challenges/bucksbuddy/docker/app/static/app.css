@@ -1,0 +1,147 @@
+/* Tag related */
+body {
+	margin: 0px, 20px, 20px, 20px;
+	padding: 0;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: #013088;
+	background-color: #ddd;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: column;
+}
+
+hr {
+	width: 100%;
+}
+
+h1 {
+	font-style: italic;
+}
+
+h1 span {
+	color: #019cde;
+}
+
+h1,h2 {
+	text-align: center;
+}
+
+/* Layout related */
+#head {
+	padding-top: 7px;
+	width: 100%;
+	height: 75px;
+}
+
+#head img {
+	float: left;
+	height: 70px;
+}
+
+#head h1 {
+	width: 300px;
+}
+
+#menu {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100%;
+	text-align: left;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.otp-item, .login-item, .question-item {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.block {
+	border-color:  #019cde;
+	border-style:  dotted;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	background-color: #eee;
+	padding: 8px;
+}
+
+.block h2 {
+	color: #019cde;
+}
+
+.button {
+	color: #019cde;
+	width: 100%;
+}
+
+#egg {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	overflow-wrap: normal;
+	font-size: xx-large;
+}
+
+.item {
+	margin: 5px;
+	text-align: center;
+}
+
+.item-left {
+	margin: 5px;
+	float: left;
+}
+
+.item-center {
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+.item-right {
+	float: right;
+}
+
+.small {
+	font-size: 10px;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
+	{
+	-webkit-box-shadow: 0 0 0 1000px #111 inset !important;
+	box-shadow: 0 0 0 1000px #111 inset !important;
+	-webkit-text-fill-color: #888 !important;
+	width: 100%
+}
+
+.is-danger {
+	color: red;
+}
+
+#footer-absolute {
+	position: absolute;
+	top: calc(100% - 30px);
+	left: 0;
+	width: 100%;
+	text-align: right;
+}
+
+#footer {
+	position: block;
+	left: 0;
+	width: 100%;
+	text-align: right;
+	margin-top: auto;
+}
+
+#created {
+	margin-right: 10px;
+}

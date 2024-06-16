@@ -1,0 +1,1 @@
+inspect the file, not the photo

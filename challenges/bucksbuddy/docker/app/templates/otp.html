@@ -1,0 +1,28 @@
+{% extends "template.html" %} {% block content %}
+<div class="block">
+	<h2>Second factor</h2>
+	<div class="login row">
+		<div class="login-item">
+			{% if error %}
+			<div class="item notification is-danger">{{ error }}</div>
+			{% endif %}
+
+			<div class="item">
+				We sent you a text with a special code. 
+			</div>
+			<form method="POST" action="/otp">
+				<div class="item">
+					<input class="input" type="text" name="otp" placeholder="Your special code" autofocus="">
+				</div>
+				<div class="item small">
+					Don't have your phone handy? <a href="/questions">Try another way</a>
+				</div>
+				<br>
+				<div class="item">
+					<input class="button" type="submit" name="submit" value="Validate second factor" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

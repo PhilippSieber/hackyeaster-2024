@@ -1,0 +1,18 @@
+
+var head = document.getElementsByTagName("head")[0];
+var script = document.createElement('script');
+script.src = 'https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js';
+head.appendChild(script);
+var script2 = document.createElement('script');
+script2.src = 'https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js';
+head.appendChild(script2);
+
+function check_code() {
+    val = document.getElementById("code").value;
+    if (val.length == 8 && val[0] == 'p' && val[1] == 'а' && val[2] == 'z' && val[3] == 'z' && val[4] == 'w' && val[5] == '0' && val[6] == 'r' && val[7] == 'D') {
+        alert("Correct!");
+        document.location.href = "/" + CryptoJS.MD5(val).toString() + ".html";
+    } else {
+        alert("Wrong!");
+    }
+}

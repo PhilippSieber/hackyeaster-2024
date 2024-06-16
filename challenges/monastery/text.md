@@ -1,0 +1,1 @@
+You found some strange symbol in an old monastery. Can you make any sense out of it?

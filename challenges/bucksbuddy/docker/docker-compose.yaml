@@ -1,0 +1,13 @@
+version: '3'
+services:
+  bucksbuddy:
+    build: .
+    image: he2024/bucksbuddy
+    restart: always
+    networks:
+      - challengenet
+    ports:
+      - "2401:5000"
+networks:
+  challengenet:
+    external: true

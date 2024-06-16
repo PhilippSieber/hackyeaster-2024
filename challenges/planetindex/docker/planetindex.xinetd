@@ -1,0 +1,17 @@
+service planetindex
+{
+    type = UNLISTED
+    socket_type     = stream
+    wait            = no
+    user            = nobody
+    bind            = 0.0.0.0
+    server          = /usr/src/planetindex/planetindex
+    # timeout 30 seconds
+    server_args     = 30 /planetindex/main
+    wait            = no
+    protocol        = tcp
+    port            = 1337
+    disable         = no
+    per_source      = 10
+    rlimit_cpu      = 25
+}

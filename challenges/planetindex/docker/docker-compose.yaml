@@ -1,0 +1,13 @@
+version: '3'
+services:
+  planetindex:
+    build: .
+    image: he2024/planetindex
+    restart: always
+    networks:
+      - challengenet
+    ports:
+      - "2403:1337"
+networks:
+  challengenet:
+    external: true

@@ -1,0 +1,27 @@
+{% extends "template.html" %} {% block content %}
+<div class="block">
+	<h2>Login</h2>
+	<div class="login row">
+		<div class="login-item">
+			{% if error %}
+			<div class="notification is-danger">{{ error }}</div>
+			{% endif %} 
+
+			<form method="POST" action="/login">
+				<div class="item">
+					<input class="input" type="text" name="login"
+						placeholder="Your Login Name" autofocus="">
+				</div>
+
+				<div class="item">
+					<input class="input" type="password" name="password"
+						placeholder="Your Password">
+				</div>
+				<div class="item">
+					<input class="button" type="submit" name="submit" value="Login" />
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

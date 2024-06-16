@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Double Hopper</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="{{ url_for('static', filename='app.js') }}"></script>
+
+</head>
+
+<body>
+	<div id="announcement">
+		<h1>Announcement</h1>
+		<h2>We will introduce the Ultimate Multi Double Whopper here soon.</h2>
+		<div id="whopper">
+			<div><img style="z-index: 1002;" class="whoppertileFirst" src="{{ url_for('static', filename='whopper.png') }}" /></div>
+			<div><img style="z-index: 1001;" class="whoppertileNext" src="{{ url_for('static', filename='whopper.png') }}" /></div>
+			<div><img style="z-index: 1000;" class="whoppertileNext" src="{{ url_for('static', filename='whopper.png') }}" /></div>
+		</div>
+	</div>
+	<div id="footer">
+		<div id="created">
+			Created by inik / 2024
+		</div>
+	</div>
+</body>
+
+</html>

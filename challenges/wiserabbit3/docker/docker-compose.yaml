@@ -1,0 +1,13 @@
+version: '3'
+services:
+  wiserabbit3:
+    build: .
+    image: he2024/wiserabbit3
+    restart: always
+    networks:
+      - challengenet
+    ports:
+      - "2405:80"
+networks:
+  challengenet:
+    external: true

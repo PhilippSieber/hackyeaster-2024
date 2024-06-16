@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>BucksBuddy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}" language="javascript"></script>
+</head>
+
+<body>
+    <div id="head">
+        <a href="/"><img class="item-left" src="{{ url_for('static', filename='logo.png') }}" /></a>
+        <h1 class="item-center">Bucks<span>Buddy</span></h1>
+
+        {% if not session.get("login_workflow_state") == "LOGGED_IN" %}
+        <div class="item-right">
+            ||| <a href="/login">Login</a>
+        </div>
+        {% endif %}
+        {% if session.get("login_workflow_state") == "LOGGED_IN" %}
+        <div class="item-right">
+            ||| <a href="/logout">Logout</a>
+        </div>
+        {% endif %}
+    </div>
+    <hr>
+    <div id="content">{% block content %} {% endblock %}</div>
+    <div id="footer">
+        <hr>
+        <p>Created by inik / 2024</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+{
+    "url": "http://ch.hackyeaster.com:2407",
+    "server": {
+        "port": 2407,
+        "host": "0.0.0.0"
+    },
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host": "mysql",
+            "port": 3306,
+            "user": "root",
+            "password": "fsfern44nsfgasdf23333",
+            "database": "ghostdata",
+            "charset": "utf8mb4"
+        }
+    },
+    "mail": {
+        "from": "'TEST' <test@aoctopoden.com>", 
+        "transport": "SMTP",
+        "logger": true,
+        "options": {
+            "host": "www06.servertown.ch",
+            "secureConnection": false,
+            "auth": {
+                "user": "hackyeaster2024@octopoden.com",
+                "pass": "wMxe~4396"
+            }
+        }
+    },
+    "logging": {
+        "transports": [
+            "file",
+            "stdout"
+        ]
+    },
+    "process": "systemd",
+    "paths": {
+        "contentPath": "/var/lib/ghost/content"
+    }
+}

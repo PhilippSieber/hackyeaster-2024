@@ -1,0 +1,13 @@
+version: '3'
+services:
+  hackyeasterletters:
+    build: .
+    image: he2024/hackyeasterletters
+    restart: always
+    networks:
+      - challengenet
+    ports:
+      - "2408:80"
+networks:
+  challengenet:
+    external: true

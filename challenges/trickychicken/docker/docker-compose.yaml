@@ -1,0 +1,13 @@
+version: '3'
+services:
+  trickychicken:
+    build: .
+    image: he2024/trickychicken
+    restart: always
+    networks:
+      - challengenet
+    ports:
+      - "2402:80"
+networks:
+  challengenet:
+    external: true

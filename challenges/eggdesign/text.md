@@ -1,0 +1,8 @@
+Hope you like the design of this year's eggs!
+
+<div id="layers" style="position: relative; width: 360px; height: 360px; background: rgba(0, 0, 0, 0); transform: rotate(-30deg) skew(25deg) scale(0.8); transition: 0.5s; margin-top: -20px; margin-bottom: 60px;">
+    <img id="layer1" src="https://www.hackyeaster.com/img/eggdesign_layer1.png" style="position: absolute; width: 100%; transition: 0.5s; opacity: 0.96; transform: translate(-96px, 96px);">
+    <img id="layer2" src="https://www.hackyeaster.com/img/eggdesign_layer2.png" style="position: absolute; width: 100%; transition: 0.5s; opacity: 0.96; transform: translate(-64px, 64px);">
+    <img id="layer3" src="https://www.hackyeaster.com/img/eggdesign_layer3.png" style="position: absolute; width: 100%; transition: 0.5s; opacity: 0.96; transform: translate(-32px, 32px);">
+    <img id="layer4" src="https://www.hackyeaster.com/img/eggdesign_layer4.png" style="position: absolute; width: 100%; transition: 0.5s; opacity: 0.96;">
+</div>

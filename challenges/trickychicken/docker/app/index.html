@@ -1,0 +1,33 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js" type="src/javascript"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js" type="src/javascript"></script>
+      <meta charset="utf-8">
+  </head>
+  <body style="padding: 50px; background-color: #ffffff; background-image: url('background.jpg'); background-size: cover;">
+    <div style="width:150px; margin:0 auto;">
+      <img src="logo.png" style="width:150px;"></img>
+    </div>
+    <div style="width:500px; margin:0 auto; text-align:center">
+      <br/><br/>
+      Enter the code:
+      <br/><br/>
+      <input type="text" id="code"></input>
+      <br/>
+      <input type="button" id="check" onclick="check_code()" value="Check the Code"></input>
+    </div>
+  </body>
+  <script id="check" src="text/javascript">
+    function check_code() {
+        val = document.getElementById("code").value;
+        hash = CryptoJS.MD5(val).toString();
+        if (hash == "078bbb4bf0f7117fb131ec45f15b5b87") {
+            alert("Correct!");
+            document.location.href = "/" + hash + ".html";
+        } else {
+            alert("Wrong!");
+        }
+    }
+  </script>
+</html>

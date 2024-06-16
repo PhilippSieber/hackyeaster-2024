@@ -1,0 +1,71 @@
+/* Tag related */
+body {
+	margin: 0px, 20px, 20px, 20px;
+	padding: 0;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: #a80;
+	background-color: black;
+}
+
+#menu {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 100%;
+	text-align: left;
+}
+
+#egg {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	overflow-wrap: normal;
+	font-size: xx-large;
+}
+
+#announcement {
+	position: block;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	overflow-wrap: normal;
+	font-size: xx-large;
+}
+
+#whopper {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.whoppertileFirst {
+    margin-top: 0px;
+	position: relative;
+}
+
+.whoppertileNext {
+    margin-top: -136px;
+	position: relative;
+}
+
+#footer-absolute {
+	position: absolute;
+	top: calc(100% - 30px);
+	left: 0;
+	width: 100%;
+	text-align: right;
+}
+
+#footer {
+	position: block;
+	left: 0;
+	width: 100%;
+	text-align: right;
+}
+
+#created {
+	margin-right: 10px;
+}

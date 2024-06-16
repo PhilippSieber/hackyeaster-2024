@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  blog:
+    build: ./app
+    image: he2024/eggbusters
+    ports:
+      - 2407:2407
+    volumes:
+      - ./app/config.production.json:/var/lib/ghost/config.production.json #overwrite default settings 
+      - ./app/content:/var/lib/ghost/content
+    environment: # this section can be commented to start in dev mode by default
+      - NODE_ENV=production # set either production or development, then it will load the respective config
+    restart: always
+    networks:
+      - challengenet
+      - databasenet
+    links:
+      - mysql
+  mysql:
+    image: mysql:latest
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/:ro
+    environment:
+      # Beware of special characters in password that can be interpreted by shell
+      - MYSQL_ROOT_PASSWORD=fsfern44nsfgasdf23333
+      - MYSQL_DATABASE=ghostdata
+      - MYSQL_USER=ghostusr
+      - MYSQL_PASSWORD=dfamserhdsdrq2355zadfvjq
+    restart: always
+    networks:
+      - databasenet
+networks:
+  databasenet:
+  challengenet:
+    external: true

@@ -1,0 +1,14 @@
+# solution
+- hints from the text: >27000 digits, not proven prime
+- hint from the banner image: 0s and 1s
+- find search function (menu item "Status")
+- search for "Probable primes" (script might help)
+  - digits >27000
+  - per page 5000
+  - second page
+  - 0 and 1 only
+  -> http://factordb.com/index.php?id=1100000004627024178
+- format number string, add break after each 150 chars
+  -> ascii image of egg with QR code
+- create a scannable QR code and scan it
+- scan QR code

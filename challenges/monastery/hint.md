@@ -1,0 +1,1 @@
+After decoding the symbols, combine them to one single number, and do two more conversions.
