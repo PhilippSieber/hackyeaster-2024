@@ -13,6 +13,7 @@ The following write-ups have been written (contact me at hackyeaster@gmail.com i
 - [Brav-ura](https://github.com/Brav-ura/Hacky-easter-2024)
 - [ngroegli](https://github.com/ngroegli/hacky-easter-2024)
 - [bcluyse](https://github.com/bcluyse/he2024-writeup)
+- [daubsi](https://www.bigigloo.de/download/Write-Up_HackyEaster_2024.pdf)
 
 ## Ph1n1sh3rs
 The following players have beaten all levels and got rewarded with a "Ph1n1sh3r" badge. Congrats!
